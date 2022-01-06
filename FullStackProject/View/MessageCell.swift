@@ -10,8 +10,9 @@ import UIKit
 class MessageCell: UITableViewCell {
     
     @IBOutlet weak var view: UIView!
-    @IBOutlet weak var chatImage: UIImageView!
+    @IBOutlet weak var spaceLeft: UILabel!
     @IBOutlet weak var contentMessage: UILabel!
+    @IBOutlet weak var spaseRight: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         view.layer.cornerRadius=view.frame.size.height / 5

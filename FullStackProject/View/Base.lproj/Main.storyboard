@@ -225,7 +225,6 @@
         <!--chat-->
         <scene sceneID="lqo-gc-faj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QCY-L2-eVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="QF9-Ag-bSs" customClass="ConversationTVC" customModule="FullStackProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="UhN-o7-xik">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -238,6 +237,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="chat" image="message.fill" catalog="system" selectedImage="message.fill" id="Yug-kX-xGe"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCY-L2-eVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2981" y="824"/>
         </scene>

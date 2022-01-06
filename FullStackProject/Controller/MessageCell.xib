@@ -4,13 +4,12 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" rowHeight="139" id="KGk-i7-Jjw" customClass="MessageCell" customModule="FullStackProject" customModuleProvider="target">
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="tableCell" rowHeight="139" id="KGk-i7-Jjw" customClass="MessageCell" customModule="FullStackProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="421" height="139"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -20,17 +19,27 @@
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qRu-F5-nGI">
                         <rect key="frame" x="10" y="10" width="401" height="119"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zz8-vA-ZS1">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="U1l-wR-jLw"/>
+                                    <constraint firstAttribute="width" constant="40" id="bO6-U0-iov"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOx-t1-i9l">
-                                <rect key="frame" x="0.0" y="0.0" width="341" height="50"/>
+                                <rect key="frame" x="60" y="0.0" width="281" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyO-ep-J77">
-                                        <rect key="frame" x="10" y="10" width="321" height="30"/>
+                                        <rect key="frame" x="10" y="10" width="261" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.98205970710000001" blue="0.98878269149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="backgroundColor" red="0.73875919666342671" green="0.74042409240641238" blue="0.76583017676767673" alpha="0.58632553807947019" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="DyO-ep-J77" secondAttribute="trailing" constant="10" id="9Qy-6o-UXU"/>
                                     <constraint firstAttribute="bottom" secondItem="DyO-ep-J77" secondAttribute="bottom" constant="10" id="ESX-XG-isn"/>
@@ -38,13 +47,16 @@
                                     <constraint firstItem="DyO-ep-J77" firstAttribute="top" secondItem="SOx-t1-i9l" secondAttribute="top" constant="10" id="fPb-IM-OQv"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google_icon" translatesAutoresizingMaskIntoConstraints="NO" id="uu8-XP-WlE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h7-EB-ygb">
                                 <rect key="frame" x="361" y="0.0" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="w7X-8z-w1J"/>
-                                    <constraint firstAttribute="height" constant="40" id="xTl-Xm-Jy7"/>
+                                    <constraint firstAttribute="height" constant="40" id="IbU-ko-m0q"/>
+                                    <constraint firstAttribute="width" constant="40" id="dp8-xo-ntK"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                     </stackView>
                 </subviews>
@@ -57,17 +69,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="chatImage" destination="uu8-XP-WlE" id="N6d-LT-VCG"/>
                 <outlet property="contentMessage" destination="DyO-ep-J77" id="yz7-i1-Za0"/>
+                <outlet property="spaceLeft" destination="zz8-vA-ZS1" id="ND7-ef-QK6"/>
+                <outlet property="spaseRight" destination="3h7-EB-ygb" id="hUN-k6-JHT"/>
                 <outlet property="view" destination="SOx-t1-i9l" id="b9X-1N-1VS"/>
             </connections>
             <point key="canvasLocation" x="147.10144927536234" y="101.45089285714285"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Google_icon" width="16" height="16"/>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

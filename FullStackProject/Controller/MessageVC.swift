@@ -7,7 +7,6 @@
 
 import UIKit
 import Firebase
-import
 class MessageVC: UIViewController  {
     var messages:[Message]=[]
     @IBOutlet weak var tableView: UITableView!
@@ -42,6 +41,9 @@ class MessageVC: UIViewController  {
                            // after update messages  it will reload tabel vied
                            DispatchQueue.main.async {
                                self.tableView.reloadData()
+                               let indexPath=IndexPath(row: self.messages.count-1, section: 0)
+                               self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+
                            }
                        }
                     }
@@ -53,7 +55,7 @@ class MessageVC: UIViewController  {
     func saveMessageInFiresbase(){
         let messageBody=fieldMessage.text
         if messageBody?.trimmingCharacters(in: .whitespacesAndNewlines) != ""{
-            if let messageSender=Auth.auth().currentUser?.displayName{
+            if let messageSender=Auth.auth().currentUser?.email{
                 db.collection(k.FireStore.collectionName).addDocument(
                     data:[
                     k.FireStore.sender:messageSender,
@@ -65,6 +67,11 @@ class MessageVC: UIViewController  {
                         print("error send message \(error?.localizedDescription)")
                     }
                     else{
+                        
+                        //DispatchQueue.main.async that mean this work in main thred
+                        DispatchQueue.main.async {
+                            self.fieldMessage.text=""
+                        }
                         print("message save in fireStore")
                     }
                 }
@@ -86,8 +93,25 @@ extension MessageVC : UITableViewDataSource , UITableViewDelegate{
 
    
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: k.cellIdentifier, for: indexPath) as! MessageCell
-        cell.contentMessage?.text=messages[indexPath.row].body
+        
+        let message=messages[indexPath.row]
+         let cell = tableView.dequeueReusableCell(withIdentifier: k.cellIdentifier, for: indexPath) as! MessageCell
+         cell.contentMessage?.text=messages[indexPath.row].body
+         // if the message from current user it will be on the right side
+         if message.sender == Auth.auth().currentUser?.email{
+             cell.spaceLeft.isHidden=false
+             cell.spaseRight?.isHidden=true
+             cell.contentMessage.textAlignment = .right
+             cell.view?.backgroundColor=UIColor.blue.withAlphaComponent(0.95)
+         }
+         else
+         {
+             cell.spaceLeft.isHidden=true
+             cell.spaseRight?.isHidden=false
+             cell.contentMessage.textAlignment = .left
+             cell.view?.backgroundColor=UIColor.gray.withAlphaComponent(0.60)
+         }
+        
         return cell
     }
     
