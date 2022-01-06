@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BD3DE80C277E0FCB00DA9101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3DE80B277E0FCB00DA9101 /* AppDelegate.swift */; };
 		BD3DE80E277E0FCB00DA9101 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3DE80D277E0FCB00DA9101 /* SceneDelegate.swift */; };
-		BD3DE810277E0FCB00DA9101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3DE80F277E0FCB00DA9101 /* ViewController.swift */; };
 		BD3DE813277E0FCB00DA9101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3DE811277E0FCB00DA9101 /* Main.storyboard */; };
 		BD3DE816277E0FCB00DA9101 /* FullStackProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD3DE814277E0FCB00DA9101 /* FullStackProject.xcdatamodeld */; };
 		BD3DE818277E0FCE00DA9101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3DE817277E0FCE00DA9101 /* Assets.xcassets */; };
@@ -17,6 +16,26 @@
 		BD3DE826277E0FCE00DA9101 /* FullStackProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3DE825277E0FCE00DA9101 /* FullStackProjectTests.swift */; };
 		BD3DE830277E0FCF00DA9101 /* FullStackProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3DE82F277E0FCF00DA9101 /* FullStackProjectUITests.swift */; };
 		BD3DE832277E0FCF00DA9101 /* FullStackProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3DE831277E0FCF00DA9101 /* FullStackProjectUITestsLaunchTests.swift */; };
+		BD8B12482784FF1900645DD0 /* ConversationTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B12472784FF1900645DD0 /* ConversationTVC.swift */; };
+		BD8B124A2785053D00645DD0 /* k.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B12492785053D00645DD0 /* k.swift */; };
+		BD8B124C2785109C00645DD0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B124B2785109C00645DD0 /* Message.swift */; };
+		BD8B12532785177600645DD0 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B12512785177600645DD0 /* MessageCell.swift */; };
+		BD8B12542785177600645DD0 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD8B12522785177600645DD0 /* MessageCell.xib */; };
+		BD8B1256278530B700645DD0 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B1255278530B700645DD0 /* MessageVC.swift */; };
+		BD95EBA92780634D008C399E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD95EBA82780634D008C399E /* GoogleService-Info.plist */; };
+		BD95EBE027809C8D008C399E /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95EBDF27809C8D008C399E /* functions.swift */; };
+		BD95EBE527811DF2008C399E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = BD95EBE427811DF1008C399E /* GoogleSignIn */; };
+		BD95EBED27824D53008C399E /* GTMSessionFetcherCore in Frameworks */ = {isa = PBXBuildFile; productRef = BD95EBEC27824D53008C399E /* GTMSessionFetcherCore */; };
+		BD95EBF3278267F7008C399E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BD95EBF2278267F7008C399E /* FirebaseAuth */; };
+		BD95EBF5278267F7008C399E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BD95EBF4278267F7008C399E /* FirebaseDatabase */; };
+		BD95EBF7278267F7008C399E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BD95EBF6278267F7008C399E /* FirebaseFirestore */; };
+		BD95EBF9278267F7008C399E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = BD95EBF8278267F7008C399E /* FirebaseMessaging */; };
+		BD95EBFB278267F7008C399E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BD95EBFA278267F7008C399E /* FirebaseStorage */; };
+		BD95EBFD27838AB9008C399E /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95EBFC27838AB8008C399E /* LogIn.swift */; };
+		BD9C28CE277EE48E00B60B9E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C28CD277EE48E00B60B9E /* LoginViewController.swift */; };
+		BD9C28D0277EE4A300B60B9E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C28CF277EE4A300B60B9E /* RegisterViewController.swift */; };
+		BD9C28D2277EE4BC00B60B9E /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C28D1277EE4BC00B60B9E /* NewConversationViewController.swift */; };
+		BD9C28D4277EE4D500B60B9E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9C28D3277EE4D500B60B9E /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +59,6 @@
 		BD3DE808277E0FCB00DA9101 /* FullStackProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FullStackProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3DE80B277E0FCB00DA9101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD3DE80D277E0FCB00DA9101 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD3DE80F277E0FCB00DA9101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD3DE812277E0FCB00DA9101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD3DE815277E0FCB00DA9101 /* FullStackProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FullStackProject.xcdatamodel; sourceTree = "<group>"; };
 		BD3DE817277E0FCE00DA9101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +69,19 @@
 		BD3DE82B277E0FCE00DA9101 /* FullStackProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullStackProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3DE82F277E0FCF00DA9101 /* FullStackProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullStackProjectUITests.swift; sourceTree = "<group>"; };
 		BD3DE831277E0FCF00DA9101 /* FullStackProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullStackProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD8B12472784FF1900645DD0 /* ConversationTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTVC.swift; sourceTree = "<group>"; };
+		BD8B12492785053D00645DD0 /* k.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = k.swift; sourceTree = "<group>"; };
+		BD8B124B2785109C00645DD0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		BD8B12512785177600645DD0 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageCell.swift; path = FullStackProject/View/MessageCell.swift; sourceTree = SOURCE_ROOT; };
+		BD8B12522785177600645DD0 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MessageCell.xib; path = FullStackProject/Controller/MessageCell.xib; sourceTree = SOURCE_ROOT; };
+		BD8B1255278530B700645DD0 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		BD95EBA82780634D008C399E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD95EBDF27809C8D008C399E /* functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		BD95EBFC27838AB8008C399E /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		BD9C28CD277EE48E00B60B9E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BD9C28CF277EE4A300B60B9E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BD9C28D1277EE4BC00B60B9E /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		BD9C28D3277EE4D500B60B9E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD95EBF9278267F7008C399E /* FirebaseMessaging in Frameworks */,
+				BD95EBE527811DF2008C399E /* GoogleSignIn in Frameworks */,
+				BD95EBF3278267F7008C399E /* FirebaseAuth in Frameworks */,
+				BD95EBF5278267F7008C399E /* FirebaseDatabase in Frameworks */,
+				BD95EBFB278267F7008C399E /* FirebaseStorage in Frameworks */,
+				BD95EBF7278267F7008C399E /* FirebaseFirestore in Frameworks */,
+				BD95EBED27824D53008C399E /* GTMSessionFetcherCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +123,7 @@
 				BD3DE824277E0FCE00DA9101 /* FullStackProjectTests */,
 				BD3DE82E277E0FCF00DA9101 /* FullStackProjectUITests */,
 				BD3DE809277E0FCB00DA9101 /* Products */,
+				BD95EBEE27824DB2008C399E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +140,12 @@
 		BD3DE80A277E0FCB00DA9101 /* FullStackProject */ = {
 			isa = PBXGroup;
 			children = (
-				BD3DE80B277E0FCB00DA9101 /* AppDelegate.swift */,
-				BD3DE80D277E0FCB00DA9101 /* SceneDelegate.swift */,
-				BD3DE80F277E0FCB00DA9101 /* ViewController.swift */,
-				BD3DE811277E0FCB00DA9101 /* Main.storyboard */,
+				BD3DE841277E103E00DA9101 /* resource */,
+				BD3DE840277E102400DA9101 /* Controller */,
+				BD3DE83F277E101900DA9101 /* View */,
+				BD95EBA82780634D008C399E /* GoogleService-Info.plist */,
+				BD3DE83E277E0FFA00DA9101 /* Model */,
 				BD3DE817277E0FCE00DA9101 /* Assets.xcassets */,
-				BD3DE819277E0FCE00DA9101 /* LaunchScreen.storyboard */,
 				BD3DE81C277E0FCE00DA9101 /* Info.plist */,
 				BD3DE814277E0FCB00DA9101 /* FullStackProject.xcdatamodeld */,
 			);
@@ -130,6 +169,57 @@
 			path = FullStackProjectUITests;
 			sourceTree = "<group>";
 		};
+		BD3DE83E277E0FFA00DA9101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD95EBDF27809C8D008C399E /* functions.swift */,
+				BD95EBFC27838AB8008C399E /* LogIn.swift */,
+				BD8B12492785053D00645DD0 /* k.swift */,
+				BD8B124B2785109C00645DD0 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD3DE83F277E101900DA9101 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD8B12512785177600645DD0 /* MessageCell.swift */,
+				BD8B12522785177600645DD0 /* MessageCell.xib */,
+				BD3DE811277E0FCB00DA9101 /* Main.storyboard */,
+				BD3DE819277E0FCE00DA9101 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD3DE840277E102400DA9101 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD9C28CD277EE48E00B60B9E /* LoginViewController.swift */,
+				BD9C28CF277EE4A300B60B9E /* RegisterViewController.swift */,
+				BD9C28D1277EE4BC00B60B9E /* NewConversationViewController.swift */,
+				BD9C28D3277EE4D500B60B9E /* ProfileViewController.swift */,
+				BD8B12472784FF1900645DD0 /* ConversationTVC.swift */,
+				BD8B1255278530B700645DD0 /* MessageVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD3DE841277E103E00DA9101 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				BD3DE80B277E0FCB00DA9101 /* AppDelegate.swift */,
+				BD3DE80D277E0FCB00DA9101 /* SceneDelegate.swift */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		BD95EBEE27824DB2008C399E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +236,15 @@
 			dependencies = (
 			);
 			name = FullStackProject;
+			packageProductDependencies = (
+				BD95EBE427811DF1008C399E /* GoogleSignIn */,
+				BD95EBEC27824D53008C399E /* GTMSessionFetcherCore */,
+				BD95EBF2278267F7008C399E /* FirebaseAuth */,
+				BD95EBF4278267F7008C399E /* FirebaseDatabase */,
+				BD95EBF6278267F7008C399E /* FirebaseFirestore */,
+				BD95EBF8278267F7008C399E /* FirebaseMessaging */,
+				BD95EBFA278267F7008C399E /* FirebaseStorage */,
+			);
 			productName = FullStackProject;
 			productReference = BD3DE808277E0FCB00DA9101 /* FullStackProject.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +317,11 @@
 				Base,
 			);
 			mainGroup = BD3DE7FF277E0FCB00DA9101;
+			packageReferences = (
+				BD95EBE327811DF1008C399E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				BD95EBEB27824D53008C399E /* XCRemoteSwiftPackageReference "gtm-session-fetcher" */,
+				BD95EBF1278267F6008C399E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BD3DE809277E0FCB00DA9101 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,7 +338,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8B12542785177600645DD0 /* MessageCell.xib in Resources */,
 				BD3DE81B277E0FCE00DA9101 /* LaunchScreen.storyboard in Resources */,
+				BD95EBA92780634D008C399E /* GoogleService-Info.plist in Resources */,
 				BD3DE818277E0FCE00DA9101 /* Assets.xcassets in Resources */,
 				BD3DE813277E0FCB00DA9101 /* Main.storyboard in Resources */,
 			);
@@ -261,9 +367,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD3DE810277E0FCB00DA9101 /* ViewController.swift in Sources */,
 				BD3DE816277E0FCB00DA9101 /* FullStackProject.xcdatamodeld in Sources */,
+				BD9C28D2277EE4BC00B60B9E /* NewConversationViewController.swift in Sources */,
 				BD3DE80C277E0FCB00DA9101 /* AppDelegate.swift in Sources */,
+				BD9C28D0277EE4A300B60B9E /* RegisterViewController.swift in Sources */,
+				BD8B1256278530B700645DD0 /* MessageVC.swift in Sources */,
+				BD8B12532785177600645DD0 /* MessageCell.swift in Sources */,
+				BD8B12482784FF1900645DD0 /* ConversationTVC.swift in Sources */,
+				BD95EBFD27838AB9008C399E /* LogIn.swift in Sources */,
+				BD95EBE027809C8D008C399E /* functions.swift in Sources */,
+				BD8B124A2785053D00645DD0 /* k.swift in Sources */,
+				BD9C28CE277EE48E00B60B9E /* LoginViewController.swift in Sources */,
+				BD8B124C2785109C00645DD0 /* Message.swift in Sources */,
+				BD9C28D4277EE4D500B60B9E /* ProfileViewController.swift in Sources */,
 				BD3DE80E277E0FCB00DA9101 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +718,71 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD95EBE327811DF1008C399E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		BD95EBEB27824D53008C399E /* XCRemoteSwiftPackageReference "gtm-session-fetcher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/gtm-session-fetcher";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		BD95EBF1278267F6008C399E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD95EBE427811DF1008C399E /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD95EBE327811DF1008C399E /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		BD95EBEC27824D53008C399E /* GTMSessionFetcherCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD95EBEB27824D53008C399E /* XCRemoteSwiftPackageReference "gtm-session-fetcher" */;
+			productName = GTMSessionFetcherCore;
+		};
+		BD95EBF2278267F7008C399E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD95EBF1278267F6008C399E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BD95EBF4278267F7008C399E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD95EBF1278267F6008C399E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		BD95EBF6278267F7008C399E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD95EBF1278267F6008C399E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BD95EBF8278267F7008C399E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD95EBF1278267F6008C399E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		BD95EBFA278267F7008C399E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD95EBF1278267F6008C399E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BD3DE814277E0FCB00DA9101 /* FullStackProject.xcdatamodeld */ = {
