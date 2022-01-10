@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseCore
+import FirebaseDatabase
 import FirebaseFirestore
 
 class RegisterViewController: UIViewController {
@@ -17,10 +18,10 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var displayError: UILabel!
     @IBOutlet weak var email: UITextField!
+    var rf = Database.database().reference()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     // if all fields is not empty it will return nuill else it will return message
@@ -62,6 +63,7 @@ class RegisterViewController: UIViewController {
     }
 
     func createUser(firstName:String,lastName:String,email:String,password:String,fieldError:UILabel){
+        
         Auth.auth().createUser(withEmail: email, password: password) { resulet, error in
             if error != nil
             {
@@ -70,9 +72,13 @@ class RegisterViewController: UIViewController {
             }
             else
             {
-                
-                let db=Firestore.firestore()
-                db.collection("users").addDocument(data: ["firsName" :firstName ,"lastName" : lastName, "uid": resulet!.user.uid])
+                let userDict:[String:Any]=[
+                    k.user.firstName:firstName
+                    ,k.user.lastName: lastName
+                    ,k.user.email:email
+                    ,k.user.conversaitions:""]
+                //1 create rf
+                self.rf.child("users").child(resulet!.user.uid).setValue(userDict)
                 self.performSegue(withIdentifier: k.registerToChat, sender: self)
 
             }

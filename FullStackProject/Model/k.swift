@@ -11,13 +11,30 @@ struct k{
     static let toRegester = "LoginToRegister"
     static let registerToChat = "RegisterToChat"
     static let cellIdentifier="tableCell"
+    static let cellUsersChatIdentifier="tableCellUsers"
+    static let messagesID="MessagesID"
+    
     // same tabelViewCell name
     static let CellNibName="MessageCell"
     
-    struct FireStore{
-        static let collectionName="Messages"
-        static let sender="sender"
-        static let bodyField="body"
-        static let dateField="data"
+    static let UsersCellNibName="usersCell"
+    
+    struct Conversaition{
+        static let collectionName="Conversations"
+        static let idConversaition="idConversaition"
+        static let senderUID="senderUID"
+        static let RecipientUID="RecipientUID"
+        static let contentMessage="contentMessage"
+        static let date="data"
+        static let isRead="isRead"
+        static let imageUrl="imageUrl"
+    }
+    struct user{
+        static let firstName="firstName"
+        static let lastName="lastName"
+        static let email="email"
+        static let conversaitions="conversaitions"
+
+
     }
 }

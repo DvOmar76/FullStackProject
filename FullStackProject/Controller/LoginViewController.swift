@@ -8,13 +8,41 @@
 import UIKit
 import Firebase
 import GoogleSignIn
+import FirebaseDatabase
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var displayError: UILabel!
+    var rf = Database.database().reference()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let conver:[String:Any]=[
+//            k.Conversaition.senderUID:"k@k.com",
+//            k.Conversaition.RecipientUID:"t@t.com",
+//
+//            "contentConv":[
+//                [
+//                    k.Conversaition.senderUID:"RkpFDXb5Qpf3yGNns5rBgfprekO2",
+//                    k.Conversaition.contentMessage:"hello",
+//                    k.Conversaition.date:Date().timeIntervalSince1970
+//                ],
+//                [
+//                    k.Conversaition.senderUID:"wwIpKeKgRyY5RedDHqxsjtoynHG3",
+//                    k.Conversaition.contentMessage:"hi omar",
+//                    k.Conversaition.date:Date().timeIntervalSince1970
+//                ],
+//                [
+//                    k.Conversaition.RecipientUID:"RkpFDXb5Qpf3yGNns5rBgfprekO2",
+//                    k.Conversaition.contentMessage:"how are you",
+//                    k.Conversaition.date:Date().timeIntervalSince1970
+//                ],
+//               
+//            ]
+//        ]
+//        let id=UUID().uuidString
+//        rf.child("conv").child("\(id)").setValue(conver)
 
         // Do any additional setup after loading the view.
     }
