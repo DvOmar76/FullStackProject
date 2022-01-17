@@ -89,10 +89,11 @@ class LoginViewController: UIViewController {
               let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
             //Firebase Auth
             Auth.auth().signIn(with: credential){result,error in
-                if let error = error {
+                if let error = error
+                {
                     print(error.localizedDescription)
                     return
-                  }
+                }
                 //displaying User Name
                 guard let user = result?.user else{
                     return
@@ -123,7 +124,7 @@ class LoginViewController: UIViewController {
             }
             else
             {
-                self.performSegue(withIdentifier: k.loginToChat, sender: self)
+                self.performse(withIdentifier: k.loginToChat, sender: self)
 
             }
         }
